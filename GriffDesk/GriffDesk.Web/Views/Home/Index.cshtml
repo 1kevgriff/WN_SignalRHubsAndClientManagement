@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts
+{
+    <script src="~/js/dashboard.js"></script>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>GriffDesk</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <button class="btn btn-primary">New Ticket</button>
+        </div>
+        <div class="col-sm-10">
+            <div class="panel panel-default">
+                <div class="panel-heading">Open Tickets</div>
+                <div class="panel-body">
+                    <div class="alert alert-info">
+                        <p>There are currently no open tickets.  Hurrah.</p>
+                    </div>
+
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Title</th>
+                                <th>Opened</th>
+                                <th>Updated</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="glyphicon glyphicon-eye-open"> </span></td>
+                                <td>It broke</td>
+                                <td>11/11/2013</td>
+                                <td>11/13/2013</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span></button>
+                                    <button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <span class="label label-info">Connecting...</span>
+        </div>
+    </div>
+</div>
